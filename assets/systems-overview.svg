@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Engineering Portfolio Map</title>
+  <desc id="desc">Public evidence map for full-stack product, browser automation, Chrome Extension, desktop vision, mobile QA tools, and AI workflow projects.</desc>
+  <rect width="1600" height="1000" fill="#f8f6ef"/>
+  <text x="80" y="112" font-family="Segoe UI, Arial, sans-serif" font-size="54" font-weight="800" fill="#1f2933">Engineering Portfolio Map</text>
+  <text x="84" y="160" font-family="Segoe UI, Arial, sans-serif" font-size="25" fill="#5f6c7b">Public evidence of automation, full-stack systems, extensions, desktop tooling, and AI workflows</text>
+
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <g transform="translate(90 240)">
+      <rect width="390" height="190" fill="#ffffff" stroke="#303b44" stroke-width="3"/>
+      <rect width="390" height="10" fill="#0f766e"/>
+      <text x="24" y="62" font-size="27" font-weight="800" fill="#1f2933">Full-stack Product</text>
+      <text x="24" y="104" font-size="18" fill="#5f6c7b">Next.js, FastAPI, SQLAlchemy, shared</text>
+      <text x="24" y="130" font-size="18" fill="#5f6c7b">types, stock dashboard, TradingView</text>
+      <text x="24" y="156" font-size="18" fill="#5f6c7b">side panel.</text>
+    </g>
+
+    <g transform="translate(605 240)">
+      <rect width="390" height="190" fill="#ffffff" stroke="#303b44" stroke-width="3"/>
+      <rect width="390" height="10" fill="#2f5f98"/>
+      <text x="24" y="62" font-size="27" font-weight="800" fill="#1f2933">Browser Automation</text>
+      <text x="24" y="104" font-size="18" fill="#5f6c7b">Playwright, Electron, task queue,</text>
+      <text x="24" y="130" font-size="18" fill="#5f6c7b">session recovery, artifact logging,</text>
+      <text x="24" y="156" font-size="18" fill="#5f6c7b">tests.</text>
+    </g>
+
+    <g transform="translate(1120 240)">
+      <rect width="390" height="190" fill="#ffffff" stroke="#303b44" stroke-width="3"/>
+      <rect width="390" height="10" fill="#b7791f"/>
+      <text x="24" y="62" font-size="27" font-weight="800" fill="#1f2933">Chrome Extension</text>
+      <text x="24" y="104" font-size="18" fill="#5f6c7b">Manifest V3, content scripts, popup</text>
+      <text x="24" y="130" font-size="18" fill="#5f6c7b">UI, side panel, browser storage.</text>
+    </g>
+
+    <g transform="translate(90 570)">
+      <rect width="390" height="190" fill="#ffffff" stroke="#303b44" stroke-width="3"/>
+      <rect width="390" height="10" fill="#b4533c"/>
+      <text x="24" y="62" font-size="27" font-weight="800" fill="#1f2933">Desktop Vision</text>
+      <text x="24" y="104" font-size="18" fill="#5f6c7b">OpenCV, PyQt5, screen capture,</text>
+      <text x="24" y="130" font-size="18" fill="#5f6c7b">HSV masks, rule engine, Windows</text>
+      <text x="24" y="156" font-size="18" fill="#5f6c7b">input APIs.</text>
+    </g>
+
+    <g transform="translate(605 570)">
+      <rect width="390" height="190" fill="#ffffff" stroke="#303b44" stroke-width="3"/>
+      <rect width="390" height="10" fill="#51624f"/>
+      <text x="24" y="62" font-size="27" font-weight="800" fill="#1f2933">Mobile QA Tools</text>
+      <text x="24" y="104" font-size="18" fill="#5f6c7b">Ionic, Angular, Leaflet, ADB, route</text>
+      <text x="24" y="130" font-size="18" fill="#5f6c7b">simulation, speed modes, fork</text>
+      <text x="24" y="156" font-size="18" fill="#5f6c7b">customization.</text>
+    </g>
+
+    <g transform="translate(1120 570)">
+      <rect width="390" height="190" fill="#ffffff" stroke="#303b44" stroke-width="3"/>
+      <rect width="390" height="10" fill="#7c4d2f"/>
+      <text x="24" y="62" font-size="27" font-weight="800" fill="#1f2933">AI Workflow</text>
+      <text x="24" y="104" font-size="18" fill="#5f6c7b">AI coding agents, prompt workflows,</text>
+      <text x="24" y="130" font-size="18" fill="#5f6c7b">local media/TTS experiments,</text>
+      <text x="24" y="156" font-size="18" fill="#5f6c7b">documentation.</text>
+    </g>
+  </g>
+
+  <g stroke="#8296a0" stroke-width="4" fill="none">
+    <path d="M480 335H605"/>
+    <path d="M995 335H1120"/>
+    <path d="M480 665H605"/>
+    <path d="M995 665H1120"/>
+    <path d="M285 430V570"/>
+    <path d="M800 430V570"/>
+    <path d="M1315 430V570"/>
+  </g>
+
+  <text x="180" y="870" font-family="Segoe UI, Arial, sans-serif" font-size="25" fill="#1f2933">Public layer: case studies, skill matrix, mock demos, validation notes</text>
+  <text x="180" y="918" font-family="Segoe UI, Arial, sans-serif" font-size="25" fill="#5f6c7b">Private layer: credentials, real workflows, source code, data, browser profiles, media assets</text>
+</svg>
