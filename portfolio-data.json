@@ -1,0 +1,92 @@
+{
+  "name": "Ulin Chen / Dennis",
+  "links": {
+    "linkedin": "https://www.linkedin.com/in/ulin-chen-a0050b3a9",
+    "github": "https://github.com/dennis23100",
+    "publicDemo": "https://fathermotherday.vercel.app/"
+  },
+  "positioning": [
+    "Automation and integration developer",
+    "Full-stack web developer",
+    "Chrome Extension and desktop automation builder",
+    "AI-assisted workflow developer"
+  ],
+  "bestFitRoles": [
+    "Automation Engineer",
+    "Full-stack Developer",
+    "Internal Tools Developer",
+    "Browser Extension Developer",
+    "QA Automation / Tooling Engineer",
+    "AI-assisted Workflow Developer"
+  ],
+  "coreSkills": {
+    "frontend": ["Next.js", "TypeScript", "Tailwind", "HTML", "CSS", "JavaScript", "Canvas"],
+    "backend": ["FastAPI", "SQLAlchemy", "Express", "REST APIs"],
+    "automation": ["Playwright", "Electron", "task queues", "session recovery", "artifact logging"],
+    "browserExtensions": ["Manifest V3", "content scripts", "popup UI", "side panel", "chrome.storage"],
+    "desktopVision": ["OpenCV", "PyQt5", "mss", "Windows GDI", "SendInput", "rule engine"],
+    "mobileTooling": ["Ionic", "Angular", "Leaflet", "ADB", "route simulation"],
+    "aiWorkflow": ["AI coding agents", "prompt workflows", "debugging assistance", "workflow documentation"]
+  },
+  "projects": [
+    {
+      "name": "Stock Analysis Sidekick",
+      "status": "Completed MVP",
+      "type": "Full-stack product with browser extension workflow",
+      "caseStudy": "case-studies/stock-analysis-sidekick.md",
+      "skills": ["Next.js", "TypeScript", "FastAPI", "SQLAlchemy", "Chrome Extension", "AI prompt workflow"],
+      "evidence": ["Frontend typecheck passed", "Next.js production build passed", "Backend compile check passed"],
+      "publicStrategy": "Case study plus possible sanitized demo"
+    },
+    {
+      "name": "Realtime Screen Automation Demo",
+      "status": "Completed prototype",
+      "type": "Desktop screen detection and action engine",
+      "caseStudy": "case-studies/realtime-screen-automation-demo.md",
+      "skills": ["OpenCV", "PyQt5", "mss", "Windows API", "SendInput", "rule engine"],
+      "evidence": ["Python compile check passed", "Screen capture and rule engine inspected"],
+      "publicStrategy": "Mock demo; raw private workflow remains private"
+    },
+    {
+      "name": "Legacy Site Automation Worker",
+      "status": "Completed internal tool",
+      "type": "Reliable browser automation for unstable legacy systems",
+      "caseStudy": "case-studies/legacy-site-automation-worker.md",
+      "skills": ["TypeScript", "Express", "Playwright", "Electron", "session recovery", "test design"],
+      "evidence": ["Typecheck passed", "Test suite passed 19/19"],
+      "publicStrategy": "Architecture case study only"
+    },
+    {
+      "name": "Chrome Extension Form Automation",
+      "status": "Completed helpers",
+      "type": "Manifest V3 extensions for structured form and attendance workflows",
+      "caseStudy": "case-studies/chrome-extension-form-automation.md",
+      "skills": ["Manifest V3", "content scripts", "popup UI", "chrome.storage", "Apps Script"],
+      "evidence": ["Main JavaScript syntax checks passed"],
+      "publicStrategy": "Mock extension demo"
+    },
+    {
+      "name": "Mobile Location Testing Tool",
+      "status": "Fork customization / prototype",
+      "type": "LBS QA and route simulation tooling",
+      "caseStudy": "case-studies/mobile-location-testing-tool.md",
+      "skills": ["Ionic", "Angular", "Leaflet", "ADB", "Express"],
+      "evidence": ["Local diff inspected: 1,331 insertions and 429 deletions"],
+      "publicStrategy": "Fork/customization case study with upstream attribution"
+    },
+    {
+      "name": "Interactive Gift Mini-game",
+      "status": "Completed personal web experience",
+      "type": "Mobile-first interactive frontend",
+      "caseStudy": "case-studies/interactive-gift-mini-game.md",
+      "skills": ["HTML", "CSS", "JavaScript", "Canvas", "touch UI", "stateful flow"],
+      "evidence": ["Main JavaScript syntax checks passed"],
+      "publicStrategy": "Template after private asset replacement"
+    }
+  ],
+  "sourceCodePolicy": {
+    "public": ["case studies", "architecture notes", "mock demo plans", "validation notes", "skill matrix"],
+    "private": ["credentials", "private workflows", "real data", "browser profiles", "private media", "core automation logic when sensitive"]
+  }
+}
+
