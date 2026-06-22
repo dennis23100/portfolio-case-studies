@@ -8,6 +8,7 @@ This repository is designed for HR, hiring managers, and technical interviewers.
 
 - LinkedIn: <https://www.linkedin.com/in/ulin-chen-a0050b3a9>
 - GitHub: <https://github.com/dennis23100>
+- Live event lottery: <https://byyoung184179.vercel.app/lottery.html?room=2026>
 - Public demo: <https://fathermotherday.vercel.app/>
 - Direct mock demos: [demos/showcase.html](demos/showcase.html)
 - HR brief: [hr-brief.md](hr-brief.md)
@@ -30,6 +31,7 @@ Core strengths:
 
 | Project | Portfolio Value | Skills Demonstrated |
 | --- | --- | --- |
+| [Live Event Lottery System](case-studies/live-event-lottery-system.md) | Deployed event product with real-time winner query and synchronized host display | Firebase Realtime Database, Vercel, Excel import, QR flow, multi-role UX |
 | [Stock Analysis Sidekick](case-studies/stock-analysis-sidekick.md) | Full-stack product MVP with browser extension workflow | Next.js, FastAPI, SQLAlchemy, Chrome Extension, AI prompt workflow |
 | [Realtime Screen Automation Demo](case-studies/realtime-screen-automation-demo.md) | Real-time screen detection and desktop action engine | OpenCV, PyQt5, Windows API, rule engine |
 | [Legacy Site Automation Worker](case-studies/legacy-site-automation-worker.md) | Reliable automation around unstable legacy web systems | TypeScript, Playwright, Electron, Express, recovery design |
@@ -66,9 +68,10 @@ For direct visual review, open [demos/showcase.html](demos/showcase.html).
 
 For technical screening, review:
 
-1. [Stock Analysis Sidekick](case-studies/stock-analysis-sidekick.md)
-2. [Realtime Screen Automation Demo](case-studies/realtime-screen-automation-demo.md)
-3. [Legacy Site Automation Worker](case-studies/legacy-site-automation-worker.md)
-4. [skill-matrix.md](skill-matrix.md)
+1. [Live Event Lottery System](case-studies/live-event-lottery-system.md)
+2. [Stock Analysis Sidekick](case-studies/stock-analysis-sidekick.md)
+3. [Realtime Screen Automation Demo](case-studies/realtime-screen-automation-demo.md)
+4. [Legacy Site Automation Worker](case-studies/legacy-site-automation-worker.md)
+5. [skill-matrix.md](skill-matrix.md)
 
 For automated parsing or AI-assisted candidate analysis, use [portfolio-data.json](portfolio-data.json).
