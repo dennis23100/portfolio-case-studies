@@ -1,0 +1,53 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.keystore
+
+# Runtime / dependencies
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Build output
+dist/
+build/
+release/
+.next/
+out/
+
+# Private data
+*.db
+*.sqlite
+*.csv
+*.xlsx
+*.xls
+
+# Browser profiles and automation artifacts
+.chrome-profile/
+.chromium-profile/
+.tmp-profile*/
+artifacts/
+logs/
+run/
+
+# Media/model/vendor files
+input/
+output/
+processed/
+models/
+checkpoints/
+runtime/
+third_party/
+vendor/
+
