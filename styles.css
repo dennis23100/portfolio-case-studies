@@ -300,6 +300,35 @@ nav a:hover,
   border-block: 1px solid #ded4c5;
 }
 
+.direct-band {
+  background: #fff;
+  border-block: 1px solid var(--line);
+}
+
+.direct-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 24px;
+  align-items: center;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 24px;
+  background: #eef6f2;
+  border: 1px solid #cddfd8;
+  border-radius: 8px;
+}
+
+.direct-copy h3 {
+  margin: 0 0 8px;
+  font-size: 24px;
+  letter-spacing: 0;
+}
+
+.direct-copy p {
+  margin: 0;
+  color: var(--muted);
+}
+
 .skill-layout {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -343,6 +372,7 @@ nav a:hover,
 
 @media (max-width: 980px) {
   .intro-grid,
+  .direct-layout,
   .contact-band {
     grid-template-columns: 1fr;
   }
@@ -376,4 +406,3 @@ nav a:hover,
     min-width: 0;
   }
 }
-
