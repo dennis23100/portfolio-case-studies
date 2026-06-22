@@ -9,6 +9,41 @@ demoButtons.forEach((button) => {
   });
 });
 
+const mockWinners = [
+  { name: "Alex Chen", prize: "Grand Prize", group: "Floor 1" },
+  { name: "Mina Lin", prize: "Travel Voucher", group: "Floor 5" },
+  { name: "Jay Wu", prize: "Smart Display", group: "Floor 6" },
+  { name: "Ivy Huang", prize: "Gift Card", group: "Floor 1" },
+];
+
+let drawIndex = 0;
+
+document.getElementById("mock-draw").addEventListener("click", () => {
+  const winner = mockWinners[drawIndex % mockWinners.length];
+  drawIndex += 1;
+  document.getElementById("winner-reel").textContent = winner.name;
+  document.getElementById("host-batches").innerHTML = `
+    <article class="host-batch latest">
+      <strong>${escapeHtml(winner.name)}</strong>
+      <span>${escapeHtml(winner.prize)} / ${escapeHtml(winner.group)} / synced to host display</span>
+    </article>
+    <article class="host-batch">
+      <strong>Previous winners</strong>
+      <span>Older batches remain available for review.</span>
+    </article>
+  `;
+  document.getElementById("query-result").textContent =
+    `${winner.name} is now visible in the mock winner query and host display.`;
+});
+
+document.getElementById("query-winner").addEventListener("click", () => {
+  const query = document.getElementById("winner-query").value.trim().toLowerCase();
+  const match = mockWinners.find((winner) => winner.name.toLowerCase().includes(query));
+  document.getElementById("query-result").textContent = match
+    ? `${match.name} won ${match.prize}. This mirrors the live participant query flow.`
+    : "No matching mock winner found. The live page checks Firebase winner records.";
+});
+
 const stockData = {
   NVDA: { bias: "Watch / Wait", risk: "Medium", momentum: 72, valuation: 48, news: 61 },
   TSLA: { bias: "Speculative", risk: "High", momentum: 58, valuation: 36, news: 78 },
@@ -136,4 +171,3 @@ function escapeHtml(value) {
     .replaceAll('"', "&quot;")
     .replaceAll("'", "&#039;");
 }
-
