@@ -3,7 +3,9 @@
   "links": {
     "linkedin": "https://www.linkedin.com/in/ulin-chen-a0050b3a9",
     "github": "https://github.com/dennis23100",
-    "publicDemo": "https://fathermotherday.vercel.app/"
+    "publicDemo": "https://fathermotherday.vercel.app/",
+    "portfolioSite": "https://dennis23100.github.io/portfolio-case-studies/",
+    "directDemoGallery": "https://dennis23100.github.io/portfolio-case-studies/demos/showcase.html"
   },
   "positioning": [
     "Automation and integration developer",
@@ -89,4 +91,3 @@
     "private": ["credentials", "private workflows", "real data", "browser profiles", "private media", "core automation logic when sensitive"]
   }
 }
-
