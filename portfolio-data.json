@@ -11,7 +11,7 @@
   "positioning": [
     "Automation and integration developer",
     "Full-stack web developer",
-    "Deployed real-time event system builder",
+    "Deployed event workflow builder",
     "Chrome Extension and desktop automation builder",
     "AI-assisted workflow developer"
   ],
@@ -27,7 +27,7 @@
   "coreSkills": {
     "frontend": ["Next.js", "TypeScript", "Tailwind", "HTML", "CSS", "JavaScript", "Canvas"],
     "backend": ["FastAPI", "SQLAlchemy", "Express", "REST APIs"],
-    "eventSystems": ["Firebase Realtime Database", "Vercel", "Excel import", "QR code flow", "multi-role pages"],
+    "eventSystems": ["Vercel", "public-safe local demo sync", "QR code flow", "multi-role pages", "sanitized demo data", "production database design kept private"],
     "automation": ["Playwright", "Electron", "task queues", "session recovery", "artifact logging"],
     "browserExtensions": ["Manifest V3", "content scripts", "popup UI", "side panel", "chrome.storage"],
     "desktopVision": ["OpenCV", "PyQt5", "mss", "Windows GDI", "SendInput", "rule engine"],
@@ -37,17 +37,17 @@
   "projects": [
     {
       "name": "Live Event Lottery System",
-      "status": "Deployed public event system",
-      "type": "Real-time event lottery with participant query, host display, and claim verification",
+      "status": "Sanitized public portfolio demo",
+      "type": "Event lottery workflow with participant query, host display, and read-only claim verification mock",
       "caseStudy": "case-studies/live-event-lottery-system.md",
       "liveLinks": {
         "lottery": "https://byyoung184179.vercel.app/lottery.html?room=2026",
         "query": "https://byyoung184179.vercel.app/check.html?room=2026",
         "host": "https://byyoung184179.vercel.app/hoster.html?room=2026"
       },
-      "skills": ["Firebase Realtime Database", "Vercel", "Excel import", "QR code generation", "multi-role workflow"],
-      "evidence": ["Live Vercel deployment", "Real-time host list synchronization", "Participant winner lookup page"],
-      "publicStrategy": "Can be linked as deployed result; source should be cleaned before heavier promotion"
+      "skills": ["Vercel deployment", "localStorage demo sync", "QR code generation", "multi-role workflow", "privacy-aware public demo cleanup"],
+      "evidence": ["Live Vercel deployment", "Fake participant data only", "Participant lookup and host display pages", "Admin page converted to read-only mock"],
+      "publicStrategy": "Current public source is cleaned for portfolio review: no real participant spreadsheets, no client-side operator password, and no production database writes. Original production architecture is described only at a high level."
     },
     {
       "name": "Stock Analysis Sidekick",
@@ -106,6 +106,6 @@
   ],
   "sourceCodePolicy": {
     "public": ["case studies", "architecture notes", "mock demo plans", "validation notes", "skill matrix", "safe live product links"],
-    "private": ["credentials", "private workflows", "real data", "browser profiles", "private media", "core automation logic when sensitive", "admin operations"]
+    "private": ["credentials", "private workflows", "real data", "browser profiles", "private media", "core automation logic when sensitive", "admin operations", "production database configuration"]
   }
 }
