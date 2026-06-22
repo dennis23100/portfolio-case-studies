@@ -30,6 +30,11 @@ I am strongest when a workflow involves multiple moving pieces: browser UI, API,
 
 ## Strongest Portfolio Projects
 
+Direct visual review:
+- Portfolio site: <https://dennis23100.github.io/portfolio-case-studies/>
+- Direct demo gallery: <https://dennis23100.github.io/portfolio-case-studies/demos/showcase.html>
+- Existing public live demo: <https://fathermotherday.vercel.app/>
+
 ### 1. Stock Analysis Sidekick
 
 Why it matters:
@@ -87,4 +92,3 @@ Good technical follow-up questions:
 3. How do Chrome content scripts, popup scripts, and browser storage coordinate?
 4. How do you decide what source code is safe to publish?
 5. How do you use AI coding agents without losing control of architecture and privacy?
-
