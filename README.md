@@ -9,6 +9,7 @@ This repository is designed for HR, hiring managers, and technical interviewers.
 - LinkedIn: <https://www.linkedin.com/in/ulin-chen-a0050b3a9>
 - GitHub: <https://github.com/dennis23100>
 - Public demo: <https://fathermotherday.vercel.app/>
+- Direct mock demos: [demos/showcase.html](demos/showcase.html)
 - HR brief: [hr-brief.md](hr-brief.md)
 - Skill matrix: [skill-matrix.md](skill-matrix.md)
 - Structured portfolio data: [portfolio-data.json](portfolio-data.json)
@@ -61,6 +62,8 @@ Public materials do not include:
 
 For a fast HR review, start with [hr-brief.md](hr-brief.md).
 
+For direct visual review, open [demos/showcase.html](demos/showcase.html).
+
 For technical screening, review:
 
 1. [Stock Analysis Sidekick](case-studies/stock-analysis-sidekick.md)
@@ -69,4 +72,3 @@ For technical screening, review:
 4. [skill-matrix.md](skill-matrix.md)
 
 For automated parsing or AI-assisted candidate analysis, use [portfolio-data.json](portfolio-data.json).
-
