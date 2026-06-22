@@ -14,6 +14,18 @@ This matrix maps skills to portfolio evidence. It is intended for HR screening, 
 | Shared contracts | Shared TypeScript package in monorepo |
 | Production build discipline | Stock frontend production build passed |
 
+## Deployed Event Systems
+
+| Skill | Evidence |
+| --- | --- |
+| Vercel deployment | Live Event Lottery System public pages |
+| Firebase Realtime Database | Winner storage and live host/query synchronization |
+| Room-based routing | `room` query parameter separates event rooms |
+| Excel import | Participant lists loaded from spreadsheet files |
+| Multi-role workflow | Lottery page, participant query page, host display, claim verification |
+| QR entry flow | Attendees can open winner query page quickly |
+| Public safety judgment | Admin/claim flow is documented but not promoted as the main public entry |
+
 ## Browser Extension
 
 | Skill | Evidence |
@@ -75,4 +87,3 @@ This matrix maps skills to portfolio evidence. It is intended for HR screening, 
 | Canvas interaction | Scratch-card game |
 | Stateful flow | Multi-stage game/story progression |
 | Content configuration | Personal site can become reusable template |
-
