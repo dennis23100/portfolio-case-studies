@@ -2,6 +2,15 @@
 
 This guide lists project-specific topics that can be used in interviews.
 
+## Live Event Lottery System
+
+Possible questions:
+- How did you separate lottery, participant query, host display, and claim verification responsibilities?
+- How does Firebase Realtime Database keep the host list synchronized with the draw results?
+- Why use room-based URLs for event data separation?
+- How did Excel import make the tool usable for event staff?
+- What source cleanup is needed before promoting the public repository more widely?
+
 ## Stock Analysis Sidekick
 
 Possible questions:
@@ -49,4 +58,3 @@ Possible questions:
 - What belongs in a public case study?
 - What belongs in a private repo?
 - How do you make a project reviewable when the real system cannot be shown publicly?
-
