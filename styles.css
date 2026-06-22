@@ -264,6 +264,10 @@ nav a:hover,
   border-top: 5px solid #7c4d2f;
 }
 
+.project-card:nth-child(7) {
+  border-top: 5px solid #5c4a72;
+}
+
 .project-meta {
   color: var(--muted);
   font-size: 13px;
