@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Ulin Chen / Dennis engineering portfolio: automation, full-stack web, Chrome Extension, desktop automation, mobile testing, and AI-assisted development case studies.">
+    <meta name="author" content="Ulin Chen">
+    <title>Ulin Chen / Dennis - Engineering Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="Portfolio home">
+        <span class="brand-mark">UC</span>
+        <span>
+          <strong>Ulin Chen / Dennis</strong>
+          <small>Automation · Full-stack · AI-assisted development</small>
+        </span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#proof">Proof</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="intro-band">
+        <div class="intro-grid">
+          <div class="intro-copy">
+            <p class="eyebrow">Portfolio for HR and technical review</p>
+            <h1>我把重複、脆弱、人工的流程，做成可以被使用與驗證的自動化系統。</h1>
+            <p class="lead">
+              我擅長把 Web、瀏覽器擴充、桌面工具、API、資料儲存與 AI coding agents 串成完整流程。
+              這份作品集公開成果、架構與思考，保護核心程式碼與真實資料。
+            </p>
+            <div class="cta-row" aria-label="Portfolio links">
+              <a class="button primary" href="hr-brief.md">HR 快速摘要</a>
+              <a class="button" href="skill-matrix.md">技能矩陣</a>
+              <a class="button" href="portfolio-data.json">結構化資料</a>
+            </div>
+          </div>
+          <figure class="system-visual">
+            <img src="assets/systems-overview.svg" alt="Portfolio systems map showing web, extension, automation, desktop, data, and AI workflow layers">
+            <figcaption>Public portfolio map: projects are shown as capability evidence, not raw private source dumps.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="signal-band" aria-labelledby="signals-title">
+        <div class="section-head">
+          <p class="eyebrow">Why this portfolio is easy to evaluate</p>
+          <h2 id="signals-title">HR 可以快速看能力，主管可以追技術細節。</h2>
+        </div>
+        <div class="signal-grid">
+          <article class="signal">
+            <strong>完成品證據</strong>
+            <p>有公開 demo、完成的 MVP、通過檢查的專案，以及可描述的真實使用流程。</p>
+          </article>
+          <article class="signal">
+            <strong>技能可對應</strong>
+            <p>每個專案都標出技術棧、解決問題、驗證方式與適合追問的面試題。</p>
+          </article>
+          <article class="signal">
+            <strong>資料保護</strong>
+            <p>公開的是成果與架構，不公開私密流程、帳密、資料庫、Google Sheet、瀏覽器 profile。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="content-band" aria-labelledby="projects-title">
+        <div class="section-head">
+          <p class="eyebrow">Selected project evidence</p>
+          <h2 id="projects-title">重點作品</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card featured">
+            <div class="project-meta">Completed MVP · Full-stack</div>
+            <h3>Stock Analysis Sidekick</h3>
+            <p>股票決策輔助系統，包含 Next.js 前端、FastAPI 後端、shared types、watchlist、portfolio 與 TradingView Chrome side panel workflow。</p>
+            <ul>
+              <li>Next.js production build passed</li>
+              <li>Frontend typecheck passed</li>
+              <li>Backend compile check passed</li>
+            </ul>
+            <a href="case-studies/stock-analysis-sidekick.md">Read case study</a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-meta">Completed prototype · Desktop automation</div>
+            <h3>Realtime Screen Automation Demo</h3>
+            <p>使用 OpenCV 偵測螢幕狀態，透過 PyQt5 GUI、threshold rule engine 與 Windows input API 建立 closed-loop automation。</p>
+            <ul>
+              <li>Screen capture and HSV mask detection</li>
+              <li>Rule engine with cooldown and background loop</li>
+              <li>Packaged Windows desktop tool direction</li>
+            </ul>
+            <a href="case-studies/realtime-screen-automation-demo.md">Read case study</a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-meta">Completed internal tool · Reliability</div>
+            <h3>Legacy Site Automation Worker</h3>
+            <p>針對不穩定 legacy web system 的自動化 worker，處理登入失效、白頁、session corruption、重試與 artifact logging。</p>
+            <ul>
+              <li>TypeScript, Express, Playwright, Electron</li>
+              <li>Task queue and recovery design</li>
+              <li>Tests passed: 19/19</li>
+            </ul>
+            <a href="case-studies/legacy-site-automation-worker.md">Read case study</a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-meta">Completed helpers · Browser extension</div>
+            <h3>Chrome Extension Form Automation</h3>
+            <p>Manifest V3 extensions for form filling, content-script workflow, human-text parsing, browser storage, and spreadsheet export.</p>
+            <ul>
+              <li>Content scripts and popup workflow</li>
+              <li>Name-list parser and task state</li>
+              <li>Mock demo recommended for public release</li>
+            </ul>
+            <a href="case-studies/chrome-extension-form-automation.md">Read case study</a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-meta">Fork customization · Mobile QA</div>
+            <h3>Mobile Location Testing Tool</h3>
+            <p>基於 SimpleGPSMocker 的 LBS 測試工具客製化，重點是路線模擬、速度模式、Leaflet map UI 與 ADB backend。</p>
+            <ul>
+              <li>Ionic, Angular, Leaflet, Express</li>
+              <li>1,331 insertions / 429 deletions inspected</li>
+              <li>Framed as QA tooling, not game spoofing</li>
+            </ul>
+            <a href="case-studies/mobile-location-testing-tool.md">Read case study</a>
+          </article>
+
+          <article class="project-card">
+            <div class="project-meta">Completed personal web · Frontend</div>
+            <h3>Interactive Gift Mini-game</h3>
+            <p>Mobile-first mini-game website with map movement, NPC dialogue, memory game, quiz, canvas scratch card, puzzle, and final reveal flow.</p>
+            <ul>
+              <li>HTML, CSS, JavaScript, Canvas</li>
+              <li>Touch interaction and stateful flow</li>
+              <li>Template conversion planned for public source</li>
+            </ul>
+            <a href="case-studies/interactive-gift-mini-game.md">Read case study</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="content-band muted" aria-labelledby="skills-title">
+        <div class="section-head">
+          <p class="eyebrow">Skill matrix</p>
+          <h2 id="skills-title">技能不是列名詞，而是用專案證明。</h2>
+        </div>
+        <div class="skill-layout">
+          <div class="skill-column">
+            <h3>Web / Full-stack</h3>
+            <p>Next.js, TypeScript, Tailwind, FastAPI, SQLAlchemy, shared types, deployment thinking.</p>
+          </div>
+          <div class="skill-column">
+            <h3>Automation</h3>
+            <p>Playwright, Electron, task queues, session recovery, browser profiles, artifacts, reliability design.</p>
+          </div>
+          <div class="skill-column">
+            <h3>Browser Extensions</h3>
+            <p>Manifest V3, content scripts, popup UI, side panels, chrome.storage, page-state detection.</p>
+          </div>
+          <div class="skill-column">
+            <h3>Desktop / Vision</h3>
+            <p>OpenCV, PyQt5, mss, Windows GDI fallback, SendInput, threshold-based rules.</p>
+          </div>
+          <div class="skill-column">
+            <h3>Mobile / QA Tools</h3>
+            <p>Ionic, Angular, Leaflet, ADB, route simulation, local Express bridge.</p>
+          </div>
+          <div class="skill-column">
+            <h3>AI-assisted Workflows</h3>
+            <p>AI coding agents, prompt workflows, debugging notes, TTS/SRT/video pipeline exploration.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="proof" class="content-band" aria-labelledby="proof-title">
+        <div class="section-head">
+          <p class="eyebrow">Evidence and interview hooks</p>
+          <h2 id="proof-title">適合面試追問的亮點</h2>
+        </div>
+        <div class="proof-grid">
+          <article>
+            <h3>如何讓不穩定網站自動化變可靠？</h3>
+            <p>可以從 Playwright worker、session recovery、artifact logging、task queue 和 parser tests 講到完整可靠性設計。</p>
+          </article>
+          <article>
+            <h3>如何把桌面畫面轉成可操作狀態？</h3>
+            <p>可以說明 screen capture、HSV mask、ROI calibration、threshold rule engine 與 Windows SendInput 的取捨。</p>
+          </article>
+          <article>
+            <h3>如何保護私有程式碼仍展示能力？</h3>
+            <p>我採用 case study、mock demo、架構圖、驗證結果與結構化技能資料，避免公開真實帳密與流程。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-band" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow">Contact and review links</p>
+          <h2 id="contact-title">可公開檢視的作品入口</h2>
+          <p>如果需要看更深入的程式碼，我可以依職缺與面試階段提供精簡 demo 或私有 repo access。</p>
+        </div>
+        <div class="link-list">
+          <a href="https://www.linkedin.com/in/ulin-chen-a0050b3a9">LinkedIn</a>
+          <a href="https://github.com/dennis23100">GitHub</a>
+          <a href="https://fathermotherday.vercel.app/">Public Demo</a>
+          <a href="hr-brief.md">HR Brief</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
