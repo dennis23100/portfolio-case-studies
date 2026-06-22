@@ -54,7 +54,10 @@ button {
 .log-card button,
 .extension-popup button,
 .speed,
-.route-card button {
+.route-card button,
+#mock-draw,
+.query-card button,
+.live-links a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -78,6 +81,12 @@ button {
   border-color: var(--teal);
   background: var(--teal);
   color: #fff;
+}
+
+.primary-link.secondary {
+  border-color: var(--line);
+  background: #fff;
+  color: var(--ink);
 }
 
 .eyebrow {
@@ -135,6 +144,13 @@ main {
   color: var(--muted);
 }
 
+.live-link-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
 .demo-tabs {
   display: flex;
   flex-wrap: wrap;
@@ -180,6 +196,7 @@ main {
 }
 
 .stock-grid,
+.lottery-grid,
 .screen-grid,
 .worker-grid,
 .extension-grid,
@@ -188,6 +205,10 @@ main {
   display: grid;
   grid-template-columns: 220px minmax(0, 1fr) 280px;
   gap: 16px;
+}
+
+.lottery-grid {
+  grid-template-columns: minmax(0, 1fr) 280px 280px;
 }
 
 .screen-grid,
@@ -205,7 +226,9 @@ main {
 .extension-popup,
 .route-card,
 .dialogue-card,
-.mock-form {
+.mock-form,
+.host-sync-card,
+.query-card {
   padding: 16px;
   background: #f8faf8;
   border: 1px solid var(--line);
@@ -224,8 +247,106 @@ main {
 .extension-popup h3,
 .route-card h3,
 .dialogue-card h3,
-.mock-form h3 {
+.mock-form h3,
+.host-sync-card h3,
+.query-card h3 {
   margin: 0 0 12px;
+}
+
+.lottery-stage {
+  display: grid;
+  gap: 14px;
+}
+
+.stage-screen {
+  display: grid;
+  min-height: 380px;
+  align-content: center;
+  justify-items: center;
+  gap: 16px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  background:
+    linear-gradient(90deg, rgba(15,118,110,.12) 1px, transparent 1px),
+    linear-gradient(rgba(15,118,110,.12) 1px, transparent 1px),
+    #101827;
+  background-size: 42px 42px;
+  color: #fff;
+  text-align: center;
+}
+
+.stage-title {
+  color: #a7f3d0;
+  font-size: 13px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.prize-name {
+  font-size: clamp(30px, 6vw, 64px);
+  line-height: 1;
+}
+
+.winner-reel {
+  width: min(100%, 520px);
+  min-height: 86px;
+  padding: 20px;
+  border: 1px solid rgba(255,255,255,.28);
+  background: rgba(255,255,255,.1);
+  font-size: clamp(24px, 4vw, 44px);
+  font-weight: 900;
+}
+
+#mock-draw,
+.query-card button,
+.live-links a {
+  border-color: var(--teal);
+  background: var(--teal);
+  color: #fff;
+  text-decoration: none;
+}
+
+.live-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.host-sync-card,
+.query-card {
+  display: grid;
+  align-content: start;
+  gap: 12px;
+}
+
+.host-batch {
+  display: grid;
+  gap: 4px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
+.host-batch.latest {
+  border-color: #86efac;
+  background: #ecfdf5;
+}
+
+.host-batch span,
+.query-card p {
+  color: var(--muted);
+}
+
+.query-card label {
+  font-weight: 900;
+}
+
+.query-card input {
+  width: 100%;
+  min-height: 42px;
+  padding: 8px 10px;
+  border: 1px solid var(--line);
+  font: inherit;
 }
 
 .stock-main {
@@ -530,6 +651,7 @@ main {
   .demo-header,
   .live-demo-strip,
   .stock-grid,
+  .lottery-grid,
   .screen-grid,
   .worker-grid,
   .extension-grid,
@@ -553,4 +675,3 @@ main {
     grid-template-columns: 1fr;
   }
 }
-
