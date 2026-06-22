@@ -4,12 +4,14 @@
     "linkedin": "https://www.linkedin.com/in/ulin-chen-a0050b3a9",
     "github": "https://github.com/dennis23100",
     "publicDemo": "https://fathermotherday.vercel.app/",
+    "liveEventLottery": "https://byyoung184179.vercel.app/lottery.html?room=2026",
     "portfolioSite": "https://dennis23100.github.io/portfolio-case-studies/",
     "directDemoGallery": "https://dennis23100.github.io/portfolio-case-studies/demos/showcase.html"
   },
   "positioning": [
     "Automation and integration developer",
     "Full-stack web developer",
+    "Deployed real-time event system builder",
     "Chrome Extension and desktop automation builder",
     "AI-assisted workflow developer"
   ],
@@ -19,11 +21,13 @@
     "Internal Tools Developer",
     "Browser Extension Developer",
     "QA Automation / Tooling Engineer",
-    "AI-assisted Workflow Developer"
+    "AI-assisted Workflow Developer",
+    "Technical Operations / Systems Integration Developer"
   ],
   "coreSkills": {
     "frontend": ["Next.js", "TypeScript", "Tailwind", "HTML", "CSS", "JavaScript", "Canvas"],
     "backend": ["FastAPI", "SQLAlchemy", "Express", "REST APIs"],
+    "eventSystems": ["Firebase Realtime Database", "Vercel", "Excel import", "QR code flow", "multi-role pages"],
     "automation": ["Playwright", "Electron", "task queues", "session recovery", "artifact logging"],
     "browserExtensions": ["Manifest V3", "content scripts", "popup UI", "side panel", "chrome.storage"],
     "desktopVision": ["OpenCV", "PyQt5", "mss", "Windows GDI", "SendInput", "rule engine"],
@@ -31,6 +35,20 @@
     "aiWorkflow": ["AI coding agents", "prompt workflows", "debugging assistance", "workflow documentation"]
   },
   "projects": [
+    {
+      "name": "Live Event Lottery System",
+      "status": "Deployed public event system",
+      "type": "Real-time event lottery with participant query, host display, and claim verification",
+      "caseStudy": "case-studies/live-event-lottery-system.md",
+      "liveLinks": {
+        "lottery": "https://byyoung184179.vercel.app/lottery.html?room=2026",
+        "query": "https://byyoung184179.vercel.app/check.html?room=2026",
+        "host": "https://byyoung184179.vercel.app/hoster.html?room=2026"
+      },
+      "skills": ["Firebase Realtime Database", "Vercel", "Excel import", "QR code generation", "multi-role workflow"],
+      "evidence": ["Live Vercel deployment", "Real-time host list synchronization", "Participant winner lookup page"],
+      "publicStrategy": "Can be linked as deployed result; source should be cleaned before heavier promotion"
+    },
     {
       "name": "Stock Analysis Sidekick",
       "status": "Completed MVP",
@@ -87,7 +105,7 @@
     }
   ],
   "sourceCodePolicy": {
-    "public": ["case studies", "architecture notes", "mock demo plans", "validation notes", "skill matrix"],
-    "private": ["credentials", "private workflows", "real data", "browser profiles", "private media", "core automation logic when sensitive"]
+    "public": ["case studies", "architecture notes", "mock demo plans", "validation notes", "skill matrix", "safe live product links"],
+    "private": ["credentials", "private workflows", "real data", "browser profiles", "private media", "core automation logic when sensitive", "admin operations"]
   }
 }
