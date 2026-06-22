@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Direct interactive mock demos for Ulin Chen / Dennis engineering portfolio.">
+    <title>Direct Demo Gallery - Ulin Chen / Dennis</title>
+    <link rel="stylesheet" href="showcase.css">
+  </head>
+  <body>
+    <header class="demo-header">
+      <a class="back-link" href="../index.html">Back to Portfolio</a>
+      <div>
+        <p class="eyebrow">Direct product display</p>
+        <h1>互動作品展示區</h1>
+        <p class="lead">
+          這些是安全 mock demo：展示產品流程、UI、技術能力與思考方式，不公開真實資料、帳密、內部網址或核心自動化程式碼。
+        </p>
+      </div>
+    </header>
+
+    <main>
+      <section class="live-demo-strip" aria-labelledby="live-title">
+        <div>
+          <p class="eyebrow">Actual public live demo</p>
+          <h2 id="live-title">互動式雙親節書信網站</h2>
+          <p>目前真正公開部署的成品 demo，可直接給 HR 點開看完成品互動。</p>
+        </div>
+        <a class="primary-link" href="https://fathermotherday.vercel.app/">Open Live Demo</a>
+      </section>
+
+      <nav class="demo-tabs" aria-label="Demo selector">
+        <button class="active" data-demo="stock">Stock Tool</button>
+        <button data-demo="screen">Screen Automation</button>
+        <button data-demo="worker">Automation Worker</button>
+        <button data-demo="extension">Chrome Extension</button>
+        <button data-demo="location">Mobile Location QA</button>
+        <button data-demo="game">Mini-game</button>
+      </nav>
+
+      <section class="demo-panel active" id="demo-stock">
+        <div class="panel-head">
+          <div>
+            <p class="eyebrow">Completed MVP mock</p>
+            <h2>Stock Analysis Sidekick</h2>
+          </div>
+          <span class="status-pill">Next.js + FastAPI + Extension</span>
+        </div>
+        <div class="stock-grid">
+          <aside class="watchlist">
+            <h3>Watchlist</h3>
+            <button class="symbol active" data-symbol="NVDA">NVDA</button>
+            <button class="symbol" data-symbol="TSLA">TSLA</button>
+            <button class="symbol" data-symbol="AAPL">AAPL</button>
+            <button class="symbol" data-symbol="MSFT">MSFT</button>
+          </aside>
+          <div class="stock-main">
+            <div class="quote-row">
+              <div>
+                <span class="label">Active Symbol</span>
+                <strong id="stock-symbol">NVDA</strong>
+              </div>
+              <div>
+                <span class="label">Decision Bias</span>
+                <strong id="stock-bias">Watch / Wait</strong>
+              </div>
+              <div>
+                <span class="label">Risk</span>
+                <strong id="stock-risk">Medium</strong>
+              </div>
+            </div>
+            <div class="chart" aria-label="Mock stock chart">
+              <span style="height: 44%"></span>
+              <span style="height: 56%"></span>
+              <span style="height: 42%"></span>
+              <span style="height: 64%"></span>
+              <span style="height: 72%"></span>
+              <span style="height: 62%"></span>
+              <span style="height: 78%"></span>
+              <span style="height: 84%"></span>
+              <span style="height: 70%"></span>
+              <span style="height: 88%"></span>
+            </div>
+            <div class="metrics">
+              <article><span>Momentum</span><strong id="momentum">72</strong></article>
+              <article><span>Valuation</span><strong id="valuation">48</strong></article>
+              <article><span>News Risk</span><strong id="news-risk">61</strong></article>
+            </div>
+          </div>
+          <aside class="ai-card">
+            <h3>AI Review Prompt</h3>
+            <p id="prompt-preview">Analyze NVDA with technical momentum, valuation risk, portfolio exposure, and wait-for-entry strategy.</p>
+            <button id="copy-prompt">Simulate Copy Prompt</button>
+            <small id="prompt-state">Ready</small>
+          </aside>
+        </div>
+      </section>
+
+      <section class="demo-panel" id="demo-screen">
+        <div class="panel-head">
+          <div>
+            <p class="eyebrow">Safe mock of desktop automation</p>
+            <h2>Realtime Screen Automation Demo</h2>
+          </div>
+          <span class="status-pill">OpenCV + PyQt5 + Rule Engine</span>
+        </div>
+        <div class="screen-grid">
+          <div class="meter-stage">
+            <div class="mock-window">
+              <div class="window-title">Mock Desktop Meter</div>
+              <div class="meter-row"><span>HP</span><div class="meter"><i id="hp-fill"></i></div><strong id="hp-text">64%</strong></div>
+              <div class="meter-row"><span>MP</span><div class="meter blue"><i id="mp-fill"></i></div><strong id="mp-text">82%</strong></div>
+            </div>
+            <div class="mask-preview">
+              <div class="mask red"></div>
+              <div class="mask blue"></div>
+              <p>HSV mask preview</p>
+            </div>
+          </div>
+          <aside class="controls-card">
+            <label>HP threshold simulation <input id="hp-slider" type="range" min="5" max="100" value="64"></label>
+            <label>MP threshold simulation <input id="mp-slider" type="range" min="5" max="100" value="82"></label>
+            <div class="rule-output" id="rule-output">State: monitoring. No action triggered.</div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="demo-panel" id="demo-worker">
+        <div class="panel-head">
+          <div>
+            <p class="eyebrow">Reliability system mock</p>
+            <h2>Legacy Site Automation Worker</h2>
+          </div>
+          <span class="status-pill">Playwright + Electron + Recovery</span>
+        </div>
+        <div class="worker-grid">
+          <div class="pipeline">
+            <article><span>1</span><strong>Receive Task</strong><p>Structured payload enters local queue.</p></article>
+            <article><span>2</span><strong>Open Browser</strong><p>Playwright controls isolated profile.</p></article>
+            <article><span>3</span><strong>Detect State</strong><p>Worker checks page, dialog, login, and white-page states.</p></article>
+            <article><span>4</span><strong>Recover</strong><p>Retry, relogin, restart, or capture artifact.</p></article>
+          </div>
+          <aside class="log-card">
+            <button id="run-worker">Run Mock Task</button>
+            <pre id="worker-log">worker ready
+queue idle</pre>
+          </aside>
+        </div>
+      </section>
+
+      <section class="demo-panel" id="demo-extension">
+        <div class="panel-head">
+          <div>
+            <p class="eyebrow">Browser extension mock</p>
+            <h2>Chrome Extension Form Automation</h2>
+          </div>
+          <span class="status-pill">Manifest V3 + Content Script</span>
+        </div>
+        <div class="extension-grid">
+          <aside class="extension-popup">
+            <h3>Extension Popup</h3>
+            <textarea id="name-input">Alice 101
+Bob 102
+Carol 103</textarea>
+            <button id="parse-names">Parse and Fill Mock Form</button>
+          </aside>
+          <div class="mock-form">
+            <h3>Mock Legacy Form</h3>
+            <table>
+              <thead><tr><th>Name</th><th>Area</th><th>Status</th></tr></thead>
+              <tbody id="form-body">
+                <tr><td colspan="3">Waiting for parsed input.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="demo-panel" id="demo-location">
+        <div class="panel-head">
+          <div>
+            <p class="eyebrow">LBS QA tooling mock</p>
+            <h2>Mobile Location Testing Tool</h2>
+          </div>
+          <span class="status-pill">Ionic + Angular + Leaflet + ADB</span>
+        </div>
+        <div class="location-grid">
+          <div class="map-mock">
+            <div class="route-line"></div>
+            <button class="pin pin-a" data-point="A">A</button>
+            <button class="pin pin-b" data-point="B">B</button>
+            <button class="pin pin-c" data-point="C">C</button>
+          </div>
+          <aside class="route-card">
+            <h3>Route Simulation</h3>
+            <div class="speed-row">
+              <button data-speed="5" class="speed active">Walk</button>
+              <button data-speed="19" class="speed">Bike</button>
+              <button data-speed="100" class="speed">Drive</button>
+            </div>
+            <p id="location-state">Selected route point: A. Speed: 5 km/h.</p>
+            <button id="simulate-adb">Simulate ADB Update</button>
+            <small id="adb-state">Device bridge ready</small>
+          </aside>
+        </div>
+      </section>
+
+      <section class="demo-panel" id="demo-game">
+        <div class="panel-head">
+          <div>
+            <p class="eyebrow">Frontend interaction mock</p>
+            <h2>Interactive Gift Mini-game</h2>
+          </div>
+          <span class="status-pill">HTML + CSS + JS + Canvas Flow</span>
+        </div>
+        <div class="game-grid">
+          <div class="mini-map">
+            <button class="npc" data-line="Welcome. Complete the memory step to unlock the next scene.">NPC 1</button>
+            <button class="npc" data-line="A puzzle, quiz, scratch card, and final reveal can be chained safely.">NPC 2</button>
+            <button class="npc" data-line="Private photos and letters are replaced with template assets before public release.">NPC 3</button>
+          </div>
+          <aside class="dialogue-card">
+            <h3>Dialogue</h3>
+            <p id="npc-dialogue">Tap an NPC marker to preview the interaction flow.</p>
+            <div class="unlock-track"><span></span><span></span><span></span><span></span></div>
+          </aside>
+        </div>
+      </section>
+    </main>
+    <script src="showcase.js"></script>
+  </body>
+</html>
+
