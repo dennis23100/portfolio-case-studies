@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Direct interactive mock demos for Ulin Chen / Dennis engineering portfolio.">
+    <meta name="description" content="Direct interactive demos and safe live links for Ulin Chen / Dennis engineering portfolio.">
     <title>Direct Demo Gallery - Ulin Chen / Dennis</title>
     <link rel="stylesheet" href="showcase.css">
   </head>
@@ -12,9 +12,10 @@
       <a class="back-link" href="../index.html">Back to Portfolio</a>
       <div>
         <p class="eyebrow">Direct product display</p>
-        <h1>互動作品展示區</h1>
+        <h1>Direct Demo Gallery</h1>
         <p class="lead">
-          這些是安全 mock demo：展示產品流程、UI、技術能力與思考方式，不公開真實資料、帳密、內部網址或核心自動化程式碼。
+          Review deployed pages and safe interactive mock demos. Private source code, credentials, admin flows,
+          and real operational data stay protected while the product behavior remains visible.
         </p>
       </div>
     </header>
@@ -22,15 +23,19 @@
     <main>
       <section class="live-demo-strip" aria-labelledby="live-title">
         <div>
-          <p class="eyebrow">Actual public live demo</p>
-          <h2 id="live-title">互動式雙親節書信網站</h2>
-          <p>目前真正公開部署的成品 demo，可直接給 HR 點開看完成品互動。</p>
+          <p class="eyebrow">Actual public live demos</p>
+          <h2 id="live-title">Open the real deployed pages first, then use the mock panels for technical review.</h2>
+          <p>The lottery system and Father/Mother Day site are public deployments. Other private tools are represented as sanitized mock workflows.</p>
         </div>
-        <a class="primary-link" href="https://fathermotherday.vercel.app/">Open Live Demo</a>
+        <div class="live-link-group">
+          <a class="primary-link" href="https://byyoung184179.vercel.app/lottery.html?room=2026">Live Lottery</a>
+          <a class="primary-link secondary" href="https://fathermotherday.vercel.app/">Gift Site</a>
+        </div>
       </section>
 
       <nav class="demo-tabs" aria-label="Demo selector">
-        <button class="active" data-demo="stock">Stock Tool</button>
+        <button class="active" data-demo="lottery">Event Lottery</button>
+        <button data-demo="stock">Stock Tool</button>
         <button data-demo="screen">Screen Automation</button>
         <button data-demo="worker">Automation Worker</button>
         <button data-demo="extension">Chrome Extension</button>
@@ -38,7 +43,49 @@
         <button data-demo="game">Mini-game</button>
       </nav>
 
-      <section class="demo-panel active" id="demo-stock">
+      <section class="demo-panel active" id="demo-lottery">
+        <div class="panel-head">
+          <div>
+            <p class="eyebrow">Deployed event system plus safe mock</p>
+            <h2>Live Event Lottery System</h2>
+          </div>
+          <span class="status-pill">Firebase + Vercel + Excel Import</span>
+        </div>
+        <div class="lottery-grid">
+          <div class="lottery-stage">
+            <div class="stage-screen">
+              <span class="stage-title">Annual Event Draw</span>
+              <strong class="prize-name">Grand Prize</strong>
+              <div class="winner-reel" id="winner-reel">Ready to draw</div>
+              <button id="mock-draw">Run Mock Draw</button>
+            </div>
+            <div class="live-links">
+              <a href="https://byyoung184179.vercel.app/lottery.html?room=2026">Open lottery page</a>
+              <a href="https://byyoung184179.vercel.app/check.html?room=2026">Open query page</a>
+              <a href="https://byyoung184179.vercel.app/hoster.html?room=2026">Open host display</a>
+            </div>
+          </div>
+          <aside class="host-sync-card">
+            <h3>Host display sync</h3>
+            <p class="label">Latest winner batch</p>
+            <div id="host-batches">
+              <article class="host-batch latest">
+                <strong>Waiting for draw</strong>
+                <span>Firebase listener ready</span>
+              </article>
+            </div>
+          </aside>
+          <aside class="query-card">
+            <h3>Participant query</h3>
+            <label for="winner-query">Name lookup</label>
+            <input id="winner-query" type="text" value="Alex" autocomplete="off">
+            <button id="query-winner">Check Mock Result</button>
+            <p id="query-result">Enter a name to simulate the attendee winner lookup page.</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="demo-panel" id="demo-stock">
         <div class="panel-head">
           <div>
             <p class="eyebrow">Completed MVP mock</p>
@@ -230,4 +277,3 @@ Carol 103</textarea>
     <script src="showcase.js"></script>
   </body>
 </html>
-
