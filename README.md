@@ -1,42 +1,72 @@
-# Portfolio Case Studies
+# Ulin Chen / Dennis - Engineering Portfolio
 
-This repository collects selected engineering case studies from my automation, web, browser extension, desktop automation, mobile testing, and AI-assisted development projects.
+Public portfolio hub: automation, full-stack web, browser extensions, desktop automation, mobile testing tools, and AI-assisted development case studies.
 
-The goal is to show product thinking, system design, problem solving, and implementation skills without exposing private data, real organization workflows, credentials, or proprietary source code.
+This repository is designed for HR, hiring managers, and technical interviewers. It summarizes what I built, what problems I solved, which skills are demonstrated, and why some full source code remains private.
 
-## Source Policy
+## Quick Links
 
-Some projects were built for real personal or operational use. For those projects, I keep the full source private and publish only sanitized case studies, architecture notes, screenshots, mock demos, or selected non-sensitive snippets.
+- LinkedIn: <https://www.linkedin.com/in/ulin-chen-a0050b3a9>
+- GitHub: <https://github.com/dennis23100>
+- Public demo: <https://fathermotherday.vercel.app/>
+- HR brief: [hr-brief.md](hr-brief.md)
+- Skill matrix: [skill-matrix.md](skill-matrix.md)
+- Structured portfolio data: [portfolio-data.json](portfolio-data.json)
+
+## Positioning
+
+I build practical automation and integration tools that connect browser workflows, local systems, APIs, and AI coding agents. My projects show a pattern: identify a repetitive or fragile workflow, design a safer system around it, then package it into a usable tool or case study.
+
+Core strengths:
+
+- Full-stack web applications with Next.js, FastAPI, SQLAlchemy, and TypeScript
+- Chrome Extension workflows with Manifest V3, content scripts, browser storage, and side panels
+- Desktop automation with Playwright, Electron, OpenCV, PyQt5, and Windows input APIs
+- AI-assisted development, debugging, documentation, and workflow design
+- Privacy-aware portfolio presentation: public results and case studies, private sensitive source code
+
+## Featured Case Studies
+
+| Project | Portfolio Value | Skills Demonstrated |
+| --- | --- | --- |
+| [Stock Analysis Sidekick](case-studies/stock-analysis-sidekick.md) | Full-stack product MVP with browser extension workflow | Next.js, FastAPI, SQLAlchemy, Chrome Extension, AI prompt workflow |
+| [Realtime Screen Automation Demo](case-studies/realtime-screen-automation-demo.md) | Real-time screen detection and desktop action engine | OpenCV, PyQt5, Windows API, rule engine |
+| [Legacy Site Automation Worker](case-studies/legacy-site-automation-worker.md) | Reliable automation around unstable legacy web systems | TypeScript, Playwright, Electron, Express, recovery design |
+| [Chrome Extension Form Automation](case-studies/chrome-extension-form-automation.md) | Form automation, parsing, and spreadsheet export | Manifest V3, content scripts, Apps Script integration |
+| [Mobile Location Testing Tool](case-studies/mobile-location-testing-tool.md) | Fork customization for LBS QA and route simulation | Ionic, Angular, Leaflet, ADB, Express |
+| [Interactive Gift Mini-game](case-studies/interactive-gift-mini-game.md) | Frontend interaction design and mobile-first mini-game flow | HTML, CSS, JavaScript, Canvas, touch UI |
+| [Unfinished / Risky Project Skill Index](case-studies/unfinished-project-skill-index.md) | Skills extracted from projects not ready for raw public release | React Native, Supabase, AI media workflow, data analysis |
+
+## Source Code Policy
+
+Some projects were built for real personal or operational use. I do not publish raw repositories when they contain credentials, private workflows, real data, proprietary logic, browser profiles, private media, or organization-specific details.
+
+Public materials do include:
+
+- Case studies
+- Architecture notes
+- Sanitized screenshots or mock demo plans
+- Skill matrices
+- Validation notes
+- Selected non-sensitive snippets when appropriate
 
 Public materials do not include:
-- Real accounts, credentials, API keys, `.env` files, cookies, browser profiles, or tokens
-- Real user data, private CSV files, Google Sheet links, Apps Script deployment URLs, or database files
-- Real internal domains, organization-specific workflows, or identifiable screenshots
-- Private media assets, voice samples, model files, copyrighted music, or generated face/voice outputs
 
-## Featured Projects
+- `.env`, API keys, accounts, cookies, tokens, browser profiles
+- Real Google Sheet / Apps Script URLs or database files
+- Private user data, CSV files, logs, or screenshots
+- Private media, voice samples, model files, or copyrighted assets
 
-| Project | Status | Public Strategy | Main Skills |
-| --- | --- | --- | --- |
-| Stock Analysis Sidekick | Completed MVP | Case study + possible sanitized demo | Next.js, FastAPI, SQLAlchemy, Chrome Extension, AI workflow |
-| Realtime Screen Automation Demo | Completed prototype | Case study + mock demo | OpenCV, PyQt5, Windows API, rule engine |
-| Legacy Site Automation Worker | Completed internal tool | Case study only | TypeScript, Playwright, Electron, Express, recovery design |
-| Chrome Extension Form Automation | Completed helpers | Mock extension demo | Manifest V3, content scripts, parser, browser storage |
-| Mobile Location Testing Tool | Fork customization | Fork/customization case study | Ionic, Angular, Leaflet, ADB, route simulation |
-| Interactive Gift Mini-game | Completed personal site | Template after asset replacement | HTML, CSS, JavaScript, mobile-first game UI |
-| Gamified Habit RPG App | Work in progress | Skill case study first | Expo, React Native, Supabase, gamification |
-| AI Media / Voice Pipelines | Workflow experiments | Notes only | TTS, SRT automation, video pipelines, local AI tools |
+## How To Review This Portfolio
 
-## How I Showcase Non-Web Projects
+For a fast HR review, start with [hr-brief.md](hr-brief.md).
 
-Some valuable projects are not easy to deploy as public web demos. For those, I use:
+For technical screening, review:
 
-- Short screen recordings or GIFs using mock data
-- Architecture diagrams and sequence diagrams
-- Before/after workflow screenshots with private details removed
-- Test results, build notes, and reliability notes
-- A "problem -> approach -> result -> lessons learned" case-study format
-- Private source access only on request, when appropriate
+1. [Stock Analysis Sidekick](case-studies/stock-analysis-sidekick.md)
+2. [Realtime Screen Automation Demo](case-studies/realtime-screen-automation-demo.md)
+3. [Legacy Site Automation Worker](case-studies/legacy-site-automation-worker.md)
+4. [skill-matrix.md](skill-matrix.md)
 
-This lets reviewers evaluate the engineering work without requiring access to a private system or exposing sensitive implementation details.
+For automated parsing or AI-assisted candidate analysis, use [portfolio-data.json](portfolio-data.json).
 
